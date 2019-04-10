@@ -1,0 +1,14 @@
+//Random Number Generation Functions
+#include <iostream>
+#include <cstdlib>          //C standard library
+                            //definesrand(),srand (),RAND_MAX2 
+#include <ctime>            //Ctimefunctions- definestime()
+using namespace std;
+
+int main(){
+        srand(time (0));    //Settheseed;
+                            //time (0)returnscurrenttimeasanumber
+        int randNum=rand();
+        std::cout<<"A random number: "<<randNum<<endl;
+        return 0;
+}
