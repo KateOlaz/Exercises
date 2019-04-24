@@ -10,13 +10,9 @@ Point *updateConstructorPoints (const Point &p1 , const Point &p2,
 		return constructorPoints ;
 
 }
-Rectangle :: Rectangle ( const Point &11 , const Point &ur) 
-	: Polygon(updateConstructorPoints(ll, Point(ll.getX(), ur.getY()
-	   ),
-	ur, Point(ur.getX(), ll.getY ())), 4) {}
+Rectangle :: Rectangle ( const Point &11 , const Point &ur) : Polygon(updateConstructorPoints(ll, Point(ll.getX(), ur.getY()),ur, Point(ur.getX(), ll.getY ())), 4) {}
 
-Rectangle :: Rectangle ( const int llx , const int lly , const int urx ,const int ury )
-	Point ( urx , ury ) , Point ( urx ,lly ) ) , 4) {}
+Rectangle :: Rectangle ( const int llx , const int lly , const int urx ,const int ury ) Point ( urx , ury ) , Point ( urx ,lly ) ) , 4) {}
 
 
 double Rectangle :: area () const {
