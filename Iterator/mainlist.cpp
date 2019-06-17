@@ -16,8 +16,9 @@ int main()
     list1.insertar_final(4);
 
     list1.imprimir();
-
-    cout<<"display the list with iterators"<<endl;
+	
+	Iteradorlist<int> iterador;
+	
 	Iteradorlist<int> start = list1.begin();
 	Iteradorlist<int> end = list1.end();
 
