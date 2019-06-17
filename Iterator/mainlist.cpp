@@ -20,13 +20,6 @@ int main()
     cout<<"display the list with iterators"<<endl;
 	Iteradorlist<int> start = list1.begin();
 	Iteradorlist<int> end = list1.end();
-	cout << "Displaying List with external iterators" << endl;
-	while (start != end)
-	{
-		cout << *start << " ";
-		++start;
-	}
-cout << endl << endl;
 
     return 0;
 }
