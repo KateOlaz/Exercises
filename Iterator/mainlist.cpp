@@ -18,8 +18,8 @@ int main()
     list1.imprimir();
 
     cout<<"display the list with iterators"<<endl;
-	Iterator start = intList.begin();
-	Iterator end = intList.end();
+	Iteradorlist<int> start = list1.begin();
+	Iteradorlist<int> end = list1.end();
 	cout << "Displaying List with external iterators" << endl;
 	while (start != end)
 	{
@@ -30,6 +30,7 @@ cout << endl << endl;
 
     return 0;
 }
+
 
 
 
