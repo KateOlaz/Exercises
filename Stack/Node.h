@@ -5,12 +5,18 @@
 using namespace std;
 
 template <class T>
-class Node
-{
-    public:
-        T dato;
-        Node<T>*next;
+class Pila;
 
+template <class T>
+class Node{
+
+    private:
+        T dato;
+        Node<T>*next;  
+        friend class Pila<T>;
+    public:
+
+    
         Node();
         Node(T);  
         void imprimir();
