@@ -14,13 +14,12 @@ int main()
     Pila1.InsertarPila(3);
     Pila1.InsertarPila(4);
     Pila1.InsertarPila(5);
-    //cout<<Pila1.TopePila()->dato<<endl;
     cout<<Pila1.TopePila()<<endl;
     Pila1.imprimirPila();
     
-    //Pila1.EliminarPila();
-    //Pila1.imprimirPila();
-    //Pila1.EliminarTodo();
+    Pila1.EliminarPila();//POP
+    Pila1.imprimirPila();
+    Pila1.EliminarTodo();
     //Pila1.imprimirPila();
     return 0;
 }
