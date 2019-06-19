@@ -6,29 +6,23 @@
 
 #include "Node.h"
 #include "Node.cpp"
-#include "iteradorlist.h"
 
 using namespace std;
 
 template <class T>
-class LinkedList
+class Pila
 {
     private:
         Node<T> *head;
-        int size; //Numero de nodos 
     public:
-
-        Node<T> inicio();
-        Node<T> end();
-        LinkedList();
-        void lista(int);
-        void insertar_inicio(T);
-        void insertar_final(T);
-        void buscar(T);
-        void imprimir();
-        void eliminar(T);
-        void eliminar_todo();
-        ~LinkedList();
+        Node<T> *CrearPila();
+        bool pilaVacia();
+        T TopePila();
+        Node<T> *InsertarPila(T valor);
+        Node<T> *EliminarPila();
+        void imprimirPila();
+        Node<T> *EliminarTodo();
+        ~Pila();
 
 };
 #endif
