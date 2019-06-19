@@ -12,6 +12,8 @@ int main()
     Pila1.InsertarPila(1);
     Pila1.InsertarPila(2);
     Pila1.InsertarPila(3);
+    Pila1.InsertarPila(4);
+    Pila1.InsertarPila(5);
     //cout<<Pila1.TopePila()->dato<<endl;
     cout<<Pila1.TopePila()<<endl;
     Pila1.imprimirPila();
