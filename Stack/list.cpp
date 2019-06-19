@@ -58,7 +58,7 @@ void Pila<T>::imprimirPila()
         cout<<NodeAux->dato;
         NodeAux=NodeAux->next;
     }
-    cout<<" ->" <<endl;
+    cout<<" " <<endl;
 }
 
 template<typename T>
