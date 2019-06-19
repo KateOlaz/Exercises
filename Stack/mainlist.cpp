@@ -1,37 +1,24 @@
 #include <iostream>
-
+ 
 #include "list.h"
-#include "list.cpp" 
-#include "iteradorlist.h"
-#include "iteradorlist.cpp"
+#include "list.cpp"
 
 using namespace std;
  
 int main()
 {
-    LinkedList<int> list1;
-
-    list1.insertar_inicio(1);
-    list1.insertar_final(2);
-    list1.insertar_final(3);
-    list1.insertar_final(4);
-
-    list1.imprimir();
-
-
-    //cout << "mylist contains:";
-    //Iteradorlist<int> it = list1.inicio();
-    //while(it.existe_elementos())
-    //{
-    //    cout<< (*it) << " ";
-    //    it++;
-    //}
-
-    cout<<"ITERADOR"<<endl;
-	Iteradorlist<int> iterador;
-    for(iterador = list1.inicio(); iterador != list1.end() ; iterador++)
-    {
-        cout<< (*iterador) << " ";
-    }
+    Pila<int> Pila1;
+    Pila1.CrearPila();
+    Pila1.InsertarPila(1);
+    Pila1.InsertarPila(2);
+    Pila1.InsertarPila(3);
+    //cout<<Pila1.TopePila()->dato<<endl;
+    cout<<Pila1.TopePila()<<endl;
+    Pila1.imprimirPila();
+    
+    //Pila1.EliminarPila();
+    //Pila1.imprimirPila();
+    //Pila1.EliminarTodo();
+    //Pila1.imprimirPila();
     return 0;
 }
